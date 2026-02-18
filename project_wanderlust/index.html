@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderLust Adventures</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="./images/logo.png" alt="WanderLust Adventures Logo" width="110px">
+        <ul class="nav_links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#contact" class="hero-btn">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="home" class="hero">
+        <h1 class="herotitel">Explore the Wonders of India</h1>
+        <p class="heropara">Experience the rich culture, scenic beauty, and diverse landscapes of India with our expertly curated travel packages.</p>
+        <a href="#contact" class="hero-btn" >Book Now</a>
+    </section>
+
+    <section id="about" class="about">
+        <h2 class="section-title">About Us</h2>
+        <div class="aboutLayout">
+            <div class="aboutText">
+                <p> <strong>WanderLust Adventures</strong> is your gateway to exploring the vibrant and diverse landscapes of India. Our curated travel experiences are designed to showcase the best of India's natural beauty, cultural heritage, and local traditions.</p>
+                
+                <p><strong>WanderLust Adventures</strong> we are dedicated to creating unforgettable travel experiences for our customers. Start your journey with us today!</p>
+                <p>Join us on a journey of discovery and adventure as we explore the wonders of India together!</p>
+                </p>
+            </div>
+            <div class="aboutImage">
+                <img src="./images/about.png"  width="250px" alt="About WanderLust Adventures">
+            </div>
+        </div>
+    </section>
+
+    <section id="values" class="value">
+
+        <h2 class="section-title">Our Core Values for you</h2>
+        <p class="section-lead">We are committed to providing the best travel experiences.</p>
+
+        <div class="valueFlex">
+            <div class="valueCard">
+                <img src="./images/icon-plane.png" width="80px" alt="">
+                <h3>Flight Booking</h3>
+                <p class="para">Book your flights with ease and comfort.</p>
+                
+            </div>    
+
+            <div class="valueCard">
+                <img src="./images/icon-hotel.png" width="80px" alt="">
+                <h3>Hotel reservation</h3>
+                <p class="para">Reserve your stay at the best hotels across India.</p>
+                </div>
+                
+
+            <div class="valueCard">
+                <img src="./images/icon-car.png" width="80px" alt="Car Rentalss">
+                <h3>Car Renatals</h3>
+                <p class="para">Explore India with our convenient car rental services.</p>
+                
+            </div> 
+
+            <div class="valueCard">
+                <img src="./images/icon-adventure.png" width="80px" alt="Adventure Tours">
+                <h3>Adventure</h3>
+                <p class="para">Experience thrilling adventures and unforgettable memories.</p>
+                
+         </div> 
+         </div>   
+    </section>
+
+    <section id="destinations" class="destinations">
+        <h2 class="section-title">Top Destinations in India</h2>
+        <p class="section-lead">Explore the most beautiful and popular destinations in India.</p>
+        <div class="destination-grid">
+            <div class="grid-item">
+                <img src="./images/img1.png" width="200px" alt="Madurai">
+                <h3 class="desti-value">Madurai</h3>
+            </div>
+            <div class="grid-item">
+                <img src="./images/img2.png" width="200px" alt="Himalaya">
+                <h3 class="desti-value">Himalaya</h3>
+            </div>
+            <div class="grid-item">
+                <img src="./images/img3.png" width="200px" alt="Rajasthan">
+                <h3 class="desti-value">Rajasthan</h3>
+            </div>
+            <div class="grid-item">
+                <img src="./images/img4.png" width="200px" alt="Jaipur">
+                <h3 class="desti-value">Jaipur</h3>
+            </div>
+            <div class="grid-item">
+                <img src="./images/img5.png" width="200px" alt="Mysore">
+                <h3 class="desti-value">Mysore</h3>
+            </div>
+            <div class="grid-item">
+                <img src="./images/img6.png" width="200px" alt="Gujurat">
+                <h3 class="desti-value">Gujurat</h3>
+            </div>
+
+            
+        </div>
+    </section>
+
+    
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact Us</h2>
+
+        <div class="contact_card">
+            <form name="wanderlustForm" netlify> 
+                <div class="form-item">
+                    <label for="">Name</label>
+                <input name="Name" type="text" placeholder="Enter your name">
+                </div>
+
+                 <div class="form-item">
+                    <label for="">Email</label>
+                <input name="Email" type="email" placeholder="Enter your email">
+                </div>
+
+                 <div class="form-item">
+                    <label for="">Phone</label>
+                <input name="Phone" type="tel" placeholder="Enter your phone number">
+                </div>
+
+                 <div class="form-item">
+                    <label for="">Travel Destination</label>
+                <input name="Destination" type="text" placeholder="Enter your travel destination">
+                </div>
+
+                 <div class="form-item">
+                    <label for="">Message</label>
+                <input name="Message" type="text" placeholder="Enter your message">
+                </div>
+
+                <div class="text-centre">
+                    <button type="submit" class="btn-primary">
+                    Book Now
+                </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 WanderLust Adventures. All rights reserved.</p>
+        <p>lots of ❤️ from Nithin💕</p>
+    </footer>
+    <script>
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav_links a");
+
+window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (scrollY >= sectionTop - 100) {
+            current = section.getAttribute("id");
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+        }
+    });
+});
+</script>
+
+</body>
+
+</html>
